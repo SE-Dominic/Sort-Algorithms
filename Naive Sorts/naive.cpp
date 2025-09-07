@@ -26,6 +26,17 @@ void insertionSort(T ar[], int length) {
 
 }
 
+template <typename T>
+void bubbleSort( T ar[], int length) {
+    for (int passes = 0; passes < length - 1; passes++) {
+        for (int i = 0, length - passes - 1; i++) {
+            if (ar[i] > ar[i + 1]) {
+                _swap(ar[i], ar[i + 1]);
+            }
+        }
+    }
+}
+
 int main() {
     int a[] = {5, 9, 7, 8, 12, 4, 6};
     cout << "Hello world" << endl;
