@@ -58,6 +58,25 @@ void bubbleSort( T ar[], int length) {
 }
 
 int main() {
-    cout << "hello and welcome to my naive sorts file!" << endl;
+    cout << "Insertin Sort: " << endl;
+    int ar1[10] = {1, 5, 3, 7, 34, 56, 34, 9, 16, 25};
+    insertionSort(ar1, 10);
+    for(int i = 0; i < 10; i++) {
+        cout << ar1[i] << " ";
+    }
+    
+    int ar2[10] = {1, 5, 3, 7, 34, 56, 34, 9, 16, 25};
+    selectionSort(ar2, 10);
+    for(int i = 0; i < 10; i++) {
+        cout << ar2[i] << " ";
+    }
+    cout << endl;
+
+    int ar3[10] = {1, 5, 3, 7, 34, 56, 34, 9, 16, 25};
+    bubbleSort(ar3, 10);
+    for(int i = 0; i < 10; i++) {
+        cout << ar3[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
